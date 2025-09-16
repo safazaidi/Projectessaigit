@@ -1,10 +1,10 @@
 # booking.py
 
-def calculate_price(night: int, price_per_night: float) -> float:
+def calculate(night: int, price_per_day) -> float:
     """Return total cost of the stay."""
     if night <= 0:
         raise ValueError("Number of nights must be positive")
-    return night * price_per_night
+    return night * price_per_day
 
 def apply_discount(total: float, percent: float) -> float:
     """Apply a discount percentage (0–100)."""
